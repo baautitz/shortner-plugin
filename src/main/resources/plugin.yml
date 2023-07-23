@@ -1,0 +1,7 @@
+main: br.com.viniciusbautitz.shortner.Main
+version: 1.0
+load: STARTUP
+
+name: Shortner
+author: Bautitz
+website: viniciusbautitz.com.br

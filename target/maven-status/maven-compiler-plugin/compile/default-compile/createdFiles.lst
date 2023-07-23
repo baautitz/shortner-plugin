@@ -1,0 +1,4 @@
+br\com\viniciusbautitz\shortner\model\Link.class
+br\com\viniciusbautitz\shortner\service\HttpLinkService.class
+br\com\viniciusbautitz\shortner\Main.class
+br\com\viniciusbautitz\shortner\service\LinkService.class
