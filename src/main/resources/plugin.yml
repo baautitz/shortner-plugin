@@ -1,7 +1,11 @@
 main: br.com.viniciusbautitz.shortner.Main
 version: 1.0
-load: STARTUP
+load: POSTWORLD
 
 name: Shortner
 author: Bautitz
 website: viniciusbautitz.com.br
+
+commands:
+  short:
+    description: "Comando principal do plugin"

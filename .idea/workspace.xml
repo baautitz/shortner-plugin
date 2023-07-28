@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09f1756e-15f3-4476-8cf5-7b182850b7d7" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="09f1756e-15f3-4476-8cf5-7b182850b7d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/command/ShortCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Shortner_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Shortner_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/service/VniciusLinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/service/VniciusLinkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/viniciusbautitz/shortner/service/VniciusLinkServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/viniciusbautitz/shortner/service/VniciusLinkServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +23,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Vinicius Tengaten &lt;vinitengaten@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -50,7 +60,8 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Users/vinic/Documents/Projetos/plugins/Shortner",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Users/vinic/Documents/Paper/plugins",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,6 +69,7 @@
     "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -69,7 +81,7 @@
       <recent name="br.com.viniciusbautitz.shortner.service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VniciusLinkServiceTest">
+  <component name="RunManager" selected="JAR Application.Paper">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.viniciusbautitz.shortner.Main" />
       <module name="Shortner" />
@@ -79,6 +91,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in Shortner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Shortner" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -93,10 +113,35 @@
       </extension>
       <option name="PACKAGE_NAME" value="br.com.viniciusbautitz.shortner.service" />
       <option name="MAIN_CLASS_NAME" value="br.com.viniciusbautitz.shortner.service.VniciusLinkServiceTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="VniciusLinkServiceTest.testDeleteByName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Shortner" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.viniciusbautitz.shortner.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.viniciusbautitz.shortner.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.viniciusbautitz.shortner.service.VniciusLinkServiceTest" />
+      <option name="METHOD_NAME" value="testDeleteByName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Paper" type="JarApplication">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/../../../Paper/paper.jar" />
+      <option name="VM_PARAMETERS" value="-Xmx2G" />
+      <option name="WORKING_DIRECTORY" value="D:\Users\vinic\Documents\Paper\" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="corretto-1.8" />
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
@@ -109,9 +154,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JAR Application.Paper" />
+      <item itemvalue="JUnit.All in Shortner" />
+      <item itemvalue="JUnit.VniciusLinkServiceTest" />
+      <item itemvalue="JUnit.VniciusLinkServiceTest.testDeleteByName" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.VniciusLinkServiceTest" />
+        <item itemvalue="JUnit.VniciusLinkServiceTest.testDeleteByName" />
+        <item itemvalue="JUnit.All in Shortner" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -129,7 +183,10 @@
       <workItem from="1689904387418" duration="2680000" />
       <workItem from="1689962426604" duration="3331000" />
       <workItem from="1690046393149" duration="3324000" />
-      <workItem from="1690074786278" duration="17373000" />
+      <workItem from="1690074786278" duration="17890000" />
+      <workItem from="1690143194243" duration="4808000" />
+      <workItem from="1690511781930" duration="534000" />
+      <workItem from="1690512511990" duration="8645000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -139,7 +196,31 @@
       <option name="project" value="LOCAL" />
       <updated>1690098691640</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1690099011012</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690099011012</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add out/ and target/ to .gitignore">
+      <option name="closed" value="true" />
+      <created>1690099091958</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690099091958</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add out/ and target/ to .gitignore">
+      <option name="closed" value="true" />
+      <created>1690099122888</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690099122888</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -150,7 +231,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -158,6 +251,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="add out/ and target/ to .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="add out/ and target/ to .gitignore" />
   </component>
 </project>

@@ -2,7 +2,6 @@ package br.com.viniciusbautitz.shortner.service;
 
 import br.com.viniciusbautitz.shortner.model.Link;
 import com.google.gson.Gson;
-import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import okhttp3.*;
 
@@ -98,9 +97,8 @@ public class VniciusLinkService implements LinkService {
 
         try (Response response = client.newCall(request).execute()) {
             if (response.code() != 200 && response.body() != null) throw new RuntimeException("Não foi possível deletar link: " + response.body().string());
-            if (response.code() != 200) throw new RuntimeException("Não foi deletar criar link");
 
-            return true;
+            return response.code() == 200;
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

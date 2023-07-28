@@ -12,41 +12,56 @@ public class VniciusLinkServiceTest extends TestCase {
     LinkController linkController = new LinkController(linkService);
 
     public void testGetAllLinks() {
+        List<Link> links = null;
         try {
-            List<Link> links = linkController.getAllLinks();
-            assertNotNull(links);
+            links = linkController.getAllLinks();
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        assertNotNull(links);
     }
 
     public void testCreateLink() {
+        Link newTestLink;
+        Link createdLink = null;
         try {
-            Link newTestLink = new Link("teste", "teste.com", "Shortner Plugin", "Bautitz");
-            Link createdLink = linkController.createLink(newTestLink);
-            assertEquals("teste", createdLink.getName());
+            newTestLink = new Link("teste", "teste.com", "Shortner Plugin", "Bautitz");
+            createdLink = linkController.createLink(newTestLink);
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        assertNotNull(createdLink);
+        assertEquals("teste", createdLink.getName());
     }
 
     public void testGetLinkByName() {
+        Link testLink = null;
         try {
-            Link testLink = linkController.getLinkByName("teste");
-            assertEquals("teste", testLink.getName());
+            testLink = linkController.getLinkByName("teste");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        assertNotNull(testLink);
+        assertEquals("teste", testLink.getName());
     }
 
 
     public void testDeleteByName() {
+        boolean deleteLink = false;
+        Link link = null;
         try {
-            boolean deleteLink = linkController.deleteByName("teste");
-            assertTrue(deleteLink);
-            assertNull(linkController.getLinkByName("teste"));
+            deleteLink = linkController.deleteByName("teste");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
+        
+        try {
+            link = linkController.getLinkByName("teste");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+        
+        assertTrue(deleteLink);
+        assertNull(link);
     }
 }
