@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09f1756e-15f3-4476-8cf5-7b182850b7d7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/command/ShortCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Shortner_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Shortner_jar.xml" afterDir="false" />
+    <list default="true" id="09f1756e-15f3-4476-8cf5-7b182850b7d7" name="Changes" comment="add ShortCommand and created onEnable method on Main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/service/VniciusLinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/service/VniciusLinkService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/Shortner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/command/ShortCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/command/ShortCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/viniciusbautitz/shortner/service/VniciusLinkServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/viniciusbautitz/shortner/service/VniciusLinkServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,27 +48,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit3",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3": "junit.framework.TestCase",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Users/vinic/Documents/Paper/plugins",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit3&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/vinic/Documents/Paper/plugins&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="junit.framework.TestCase" />
@@ -82,8 +78,8 @@
     </key>
   </component>
   <component name="RunManager" selected="JAR Application.Paper">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="br.com.viniciusbautitz.shortner.Main" />
+    <configuration name="Shortner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="br.com.viniciusbautitz.shortner.Shortner" />
       <module name="Shortner" />
       <extension name="coverage">
         <pattern>
@@ -155,7 +151,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Shortner" />
       <item itemvalue="JAR Application.Paper" />
       <item itemvalue="JUnit.All in Shortner" />
       <item itemvalue="JUnit.VniciusLinkServiceTest" />
@@ -166,7 +162,7 @@
         <item itemvalue="JUnit.VniciusLinkServiceTest" />
         <item itemvalue="JUnit.VniciusLinkServiceTest.testDeleteByName" />
         <item itemvalue="JUnit.All in Shortner" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Shortner" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +183,8 @@
       <workItem from="1690143194243" duration="4808000" />
       <workItem from="1690511781930" duration="534000" />
       <workItem from="1690512511990" duration="8645000" />
+      <workItem from="1690576105660" duration="766000" />
+      <workItem from="1690766965829" duration="1915000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -220,7 +218,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690099122888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add ShortCommand and created onEnable method on Main">
+      <option name="closed" value="true" />
+      <created>1690576261715</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690576261715</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +258,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
     <MESSAGE value="add out/ and target/ to .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="add out/ and target/ to .gitignore" />
+    <MESSAGE value="add ShortCommand and created onEnable method on Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ShortCommand and created onEnable method on Main" />
   </component>
 </project>

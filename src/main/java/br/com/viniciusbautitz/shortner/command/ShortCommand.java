@@ -1,6 +1,6 @@
 package br.com.viniciusbautitz.shortner.command;
 
-import br.com.viniciusbautitz.shortner.Main;
+import br.com.viniciusbautitz.shortner.Shortner;
 import br.com.viniciusbautitz.shortner.model.Link;
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.TextComponent;
@@ -16,7 +16,7 @@ public class ShortCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String alias, String[] args) {
-        if (!sender.hasPermission("short.use")) {
+        if (!sender.hasPermission("shortner.short.use")) {
             sender.sendMessage("§cVocê não possui permissão para executar este comando.");
             return false;
         }
@@ -35,7 +35,7 @@ public class ShortCommand implements CommandExecutor {
 
             switch (args[0].toLowerCase()) {
                 case "info":
-                    if (!sender.hasPermission("short.get")) {
+                    if (!sender.hasPermission("shortner.short.get")) {
                         sender.sendMessage("§cVocê não possui permissão para consultar um link.");
                         return false;
                     }
@@ -43,7 +43,7 @@ public class ShortCommand implements CommandExecutor {
                     sender.sendMessage("§eConsultando link §f" + args[1] + "§e...");
                     new Thread(() -> {
                         try {
-                            Link link = Main.getLinkController().getLinkByName(args[1]);
+                            Link link = Shortner.getLinkController().getLinkByName(args[1]);
                             if (link == null) {
                                 sender.sendMessage("§cNão foi possível encontrar o link §f" + args[1] + "§c.");
                                 return;
@@ -62,7 +62,7 @@ public class ShortCommand implements CommandExecutor {
                     }).start();
                     break;
                 case "remove":
-                    if (!sender.hasPermission("short.remove")) {
+                    if (!sender.hasPermission("shortner.short.remove")) {
                         sender.sendMessage("§cVocê não possui permissão para excluir um link.");
                         return false;
                     }
@@ -70,13 +70,13 @@ public class ShortCommand implements CommandExecutor {
                     sender.sendMessage("§eConsultando link §f" + args[1] + "§e...");
                     new Thread(() -> {
                         try {
-                            Link link = Main.getLinkController().getLinkByName(args[1]);
+                            Link link = Shortner.getLinkController().getLinkByName(args[1]);
                             if (link == null) {
                                 sender.sendMessage("§cNão foi possível encontrar o link §f" + args[1] + "§c.");
                                 return;
                             }
 
-                            boolean deleteLink = Main.getLinkController().deleteByName(link.getName());
+                            boolean deleteLink = Shortner.getLinkController().deleteByName(link.getName());
                             if (deleteLink)
                                 sender.sendMessage("§aLink §f" + link.getName() + "§a excluído com sucesso.");
                         } catch (Exception e) {
@@ -91,7 +91,7 @@ public class ShortCommand implements CommandExecutor {
 
         String linkArgs = args[0];
 
-        if (!sender.hasPermission("short.create")) {
+        if (!sender.hasPermission("shortner.short.create")) {
             sender.sendMessage("§cVocê não possui permissão para criar um link.");
             return false;
         }
@@ -107,12 +107,12 @@ public class ShortCommand implements CommandExecutor {
         sender.sendMessage("§eCriando link...");
         new Thread(() -> {
             try {
-                if (Main.getLinkController().getLinkByName(link.getName()) != null) {
+                if (Shortner.getLinkController().getLinkByName(link.getName()) != null) {
                     sender.sendMessage("§cO link §f" + link.getName() + "§c já existe.");
                     return;
                 }
 
-                Link createdLink = Main.getLinkController().createLink(link);
+                Link createdLink = Shortner.getLinkController().createLink(link);
                 if (createdLink != null) {
                     sender.sendMessage("");
                     sender.sendMessage("§aLink §f" + createdLink.getName() + "§a criado com sucesso!");

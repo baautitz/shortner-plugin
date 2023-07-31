@@ -7,7 +7,7 @@ import br.com.viniciusbautitz.shortner.service.LinkService;
 import br.com.viniciusbautitz.shortner.service.VniciusLinkService;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends JavaPlugin {
+public class Shortner extends JavaPlugin {
 
     private static LinkController linkController;
 

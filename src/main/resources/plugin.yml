@@ -1,4 +1,4 @@
-main: br.com.viniciusbautitz.shortner.Main
+main: br.com.viniciusbautitz.shortner.Shortner
 version: 1.0
 load: POSTWORLD
 
@@ -9,3 +9,14 @@ website: viniciusbautitz.com.br
 commands:
   short:
     description: "Comando principal do plugin"
+
+permissions:
+  shortner.*:
+    children:
+      shortner.short.*: true
+  shortnet.short.*:
+    children:
+      shortnet.short.use: true
+      shortner.short.get: true
+      shortner.short.remove: true
+      shortner.short.create: true
