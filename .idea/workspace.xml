@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="09f1756e-15f3-4476-8cf5-7b182850b7d7" name="Changes" comment="add ShortCommand and created onEnable method on Main">
+    <list default="true" id="09f1756e-15f3-4476-8cf5-7b182850b7d7" name="Changes" comment="change Main.java class name to Shortner.java, add permissions nodes on plugin.yml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/Shortner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/command/ShortCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/viniciusbautitz/shortner/command/ShortCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +55,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3&quot;: &quot;junit.framework.TestCase&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Users/vinic/Documents/Paper/plugins&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/vinic/Documents/Projetos/plugins/Shortner&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -65,6 +63,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -184,7 +183,12 @@
       <workItem from="1690511781930" duration="534000" />
       <workItem from="1690512511990" duration="8645000" />
       <workItem from="1690576105660" duration="766000" />
-      <workItem from="1690766965829" duration="1915000" />
+      <workItem from="1690766965829" duration="2248000" />
+      <workItem from="1690825738410" duration="222000" />
+      <workItem from="1690825973497" duration="179000" />
+      <workItem from="1692676529487" duration="307000" />
+      <workItem from="1694305569141" duration="116000" />
+      <workItem from="1694305699397" duration="627000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
@@ -226,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690576261715</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change Main.java class name to Shortner.java, add permissions nodes on plugin.yml">
+      <option name="closed" value="true" />
+      <created>1690769203884</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690769203885</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +271,7 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="add out/ and target/ to .gitignore" />
     <MESSAGE value="add ShortCommand and created onEnable method on Main" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ShortCommand and created onEnable method on Main" />
+    <MESSAGE value="change Main.java class name to Shortner.java, add permissions nodes on plugin.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="change Main.java class name to Shortner.java, add permissions nodes on plugin.yml" />
   </component>
 </project>

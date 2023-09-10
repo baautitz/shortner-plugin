@@ -101,7 +101,7 @@ public class ShortCommand implements CommandExecutor {
             return true;
         }
 
-        Link link = new Link(null, args[0], "Shortner Plugin", "Bautitz");
+        Link link = new Link(null, args[0], "Servidor", sender.getName());
         if (args.length > 1) link.setName(args[1]);
 
         sender.sendMessage("§eCriando link...");
